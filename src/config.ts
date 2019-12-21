@@ -37,6 +37,8 @@ export const load = async (): Promise<ConfigInterface | undefined> => {
     if (syscall === 'open') {
       const cfg: ConfigInterface = {
         version: APP_VERSION,
+        name: 'GitLab',
+        avatar: 'https://i.imgur.com/aMaUGGN.png',
         gitlab: [
           {
             token: '',

@@ -37,6 +37,8 @@ export interface WebserverConfig {
 
 export interface ConfigInterface {
   version: ConfigVersion
+  name: string,
+  avatar: string
   gitlab: GitHookConfig[]
   server: WebserverConfig
 }
