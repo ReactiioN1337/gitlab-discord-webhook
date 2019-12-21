@@ -1,0 +1,29 @@
+{
+  "name": "gitlab-discord-webhook",
+  "version": "1.0.0",
+  "main": "src/bootstrap.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ReactiioN1337/gitlab-discord-webhook"
+  },
+  "author": {
+    "name": "ReactiioN",
+    "email": "reactiion@haze-productions.com",
+    "url": "https://reactiion.net"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.21",
+    "@types/request": "^2.48.4",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
+  }
+}
