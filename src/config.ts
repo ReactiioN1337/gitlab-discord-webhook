@@ -26,7 +26,12 @@ export const load = async (): Promise<ConfigInterface | undefined> => {
 
   try {
     const contents = await fs.readFile(cfgPath, 'utf-8')
-    return JSON.parse(contents)
+    const cfg = JSON.parse(contents)
+    if (cfg.version !== APP_VERSION) {
+      console.log(`[!] your config (vers: ${cfg.version}) may be outdated with version ${APP_VERSION}`)
+
+      // todo: migration
+    }
   } catch ({ syscall }) {
     if (syscall === 'open') {
       const cfg: ConfigInterface = {
