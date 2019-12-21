@@ -29,6 +29,10 @@ export interface WebserverConfig {
    * Specifies the page title. Message will be 'forbidden' (status: 403).
    */
   title: string
+  /**
+   * Specifies some trusted IPv4 ranges (e.g. cloudflare).
+   */
+  proxies: string[]
 }
 
 export interface ConfigInterface {

@@ -7,9 +7,9 @@ import { ConfigInterface, ConfigVersion } from '../lib/config.interface'
 import { promises as fs }  from 'fs'
 import { join, resolve }   from 'path'
 
-const APP_VERSION: ConfigVersion = '1'
-const dataDir                    = resolve('data')
-const cfgPath                    = join(dataDir, 'settings.json')
+export const APP_VERSION: ConfigVersion = '1'
+const dataDir                           = resolve('data')
+const cfgPath                           = join(dataDir, 'settings.json')
 
 const setup = async (): Promise<void> => {
   try {
