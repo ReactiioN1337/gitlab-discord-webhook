@@ -20,7 +20,19 @@ export interface GitHookConfig {
   url: string
 }
 
+export interface WebserverConfig {
+  /**
+   * Specifies the port where the express server is listening at.
+   */
+  port: number
+  /**
+   * Specifies the page title. Message will be 'forbidden' (status: 403).
+   */
+  title: string
+}
+
 export interface ConfigInterface {
   version: ConfigVersion
   gitlab: GitHookConfig[]
+  server: WebserverConfig
 }

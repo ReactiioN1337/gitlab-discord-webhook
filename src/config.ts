@@ -36,7 +36,11 @@ export const load = async (): Promise<ConfigInterface | undefined> => {
             token: '',
             url: ''
           }
-        ]
+        ],
+        server: {
+          port: 8080,
+          title: ''
+        }
       }
 
       await fs.writeFile(cfgPath, JSON.stringify(cfg, null, 2) + '\n', { encoding: 'utf-8' })
