@@ -3,3 +3,6 @@ node_modules
 
 # error logs
 yarn-error.log
+
+# custom data
+/data/
