@@ -25,5 +25,9 @@
     "nodemon": "^2.0.2",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "dev": "yarn ts-node src/bootstrap.ts",
+    "watch": "yarn nodemon --watch lib --watch src --ext js,ts,json --exec \"yarn dev\""
   }
 }
