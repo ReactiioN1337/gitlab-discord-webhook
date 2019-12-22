@@ -21,6 +21,8 @@ After deployment or installation, navigate to <http://localhost:8080> (replace l
 
 Navigate to Settings -> Integrations inside your GitLab repository and set <https://example.com/gitlab> as URL and a secret token.
 
+Don't forget to (re)start the application whenever you modify the `settings.json` using `pm2 restart gitlab-discord-webhook` or `docker-compose up -d`.
+
 ## Installation
 
 - Clone the repository using `git clone https://github.com/ReactiioN1337/gitlab-discord-webhook`
