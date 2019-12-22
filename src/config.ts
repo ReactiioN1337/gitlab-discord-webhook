@@ -3,9 +3,9 @@
  * @copyright   2019, https://reactiion.net
  * @license     MIT
  */
-import { ConfigInterface, ConfigVersion } from '../lib/config.interface'
-import { promises as fs }  from 'fs'
-import { join, resolve }   from 'path'
+import { ConfigInterface, ConfigVersion } from './../lib/config.interface'
+import { promises as fs }                 from 'fs'
+import { join, resolve }                  from 'path'
 
 export const APP_VERSION: ConfigVersion = '1'
 const dataDir                           = resolve('data')

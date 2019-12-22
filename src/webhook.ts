@@ -3,8 +3,8 @@
  * @copyright 2019, https://github.com/ReactiioN1337
  * @license   MIT
  */
-import { ConfigInterface }   from '../lib/config.interface'
-import { GitlabPushEvent }   from '../lib/gitlab.interface'
+import { ConfigInterface }   from './../lib/config.interface'
+import { GitlabPushEvent }   from './../lib/gitlab.interface'
 import { post }              from './rest'
 import { Request, Response } from 'express'
 import * as R                from 'ramda'

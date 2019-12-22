@@ -3,7 +3,7 @@
  * @copyright   2019, https://reactiion.net
  * @license     MIT
  */
-import { ResponseInterface } from '../lib/rest.interface'
+import { ResponseInterface } from './../lib/rest.interface'
 import request, { Headers }  from 'request'
 
 /**
