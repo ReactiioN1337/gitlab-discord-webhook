@@ -13,6 +13,14 @@ A webhook to integrate push events from Gitlab into Discord.
 | TypeScript | 3.5.4 |
 | GitLab / GitLab CE | latest / 12.5.2 |
 
+## Usage
+
+After deployment or installation, navigate to <http://localhost:8080> (replace localhost with your server ip). You should receive a `Forbidden` message.
+
+> I recommend to use a reverse-proxy like nginx or traefik (for docker) in order to use a domain instead of your ip.
+
+Navigate to Settings -> Integrations inside your GitLab repository and set <https://example.com/gitlab> as URL and a secret token.
+
 ## Installation
 
 - Clone the repository using `git clone https://github.com/ReactiioN1337/gitlab-discord-webhook`
