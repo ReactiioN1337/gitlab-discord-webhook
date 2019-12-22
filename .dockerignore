@@ -1,3 +1,6 @@
+# git data
+.git
+
 # npm packages (from root directory)
 /node_modules/
 # source files
@@ -9,6 +12,7 @@
 # configurations
 .editorconfig
 .gitignore
+docker-compose.yml
 package.json
 settings.json
 tsconfig.json
