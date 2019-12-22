@@ -6,6 +6,7 @@ yarn-error.log
 
 # custom data
 /data/
+/settings.json
 
 # compiled code
 dist/
