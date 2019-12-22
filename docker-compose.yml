@@ -2,6 +2,7 @@ version: '3'
 
 services:
   webhook:
+    restart: always
     image: reactiion/gitlab-discord-webhook:1.0
     volumes:
       - ./settings.json:/data/settings.json
