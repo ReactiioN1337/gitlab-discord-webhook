@@ -30,7 +30,7 @@ load().then(async cfg => {
 
   app.get('/',        (req, res) => res.sendStatus(403))
   app.get('/info',    (req, res) => res.status(200).json({ version: APP_VERSION }))
-  app.post('/gitlab', webhook)
+  app.post('/gitlab', (req, res) => webhook(cfg, req, res))
   // redirect every other route to main
   app.get('*',     (req, res) => res.redirect('/'))
 
