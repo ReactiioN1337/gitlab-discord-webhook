@@ -29,6 +29,7 @@
     "typescript": "^3.7.4"
   },
   "scripts": {
+    "compile": "yarn tsc",
     "dev": "yarn ts-node src/bootstrap.ts",
     "watch": "yarn nodemon --watch lib --watch src --ext js,ts,json --exec \"yarn dev\""
   }
