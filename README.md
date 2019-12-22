@@ -41,7 +41,7 @@ mkdir gitlab-discord-webhook
 cd gitlab-discord-webhook
 
 # fetch the latest docker-compose.yml file
-wget https://github.com/ReactiioN1337/gitlab-discord-webhook/blob/master/docker-compose.yml
+wget https://raw.githubusercontent.com/ReactiioN1337/gitlab-discord-webhook/master/docker-compose.yml
 
 # create the configuration file and add the following content
 touch settings.json && nano settings.json
