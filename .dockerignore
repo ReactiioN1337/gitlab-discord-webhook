@@ -1,0 +1,18 @@
+# npm packages (from root directory)
+/node_modules/
+# source files
+/lib/
+/src/
+# created data
+/data/
+
+# configurations
+.editorconfig
+.gitignore
+package.json
+settings.json
+tsconfig.json
+yarn.lock
+
+# log files
+yarn-error.log
